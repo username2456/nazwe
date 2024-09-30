@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pizzaFaviCon.png">
+    <title>Pizza Hut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        #b11, #b12, #b13, #b14{
+          border: 3px solid black;
+        }
+        #formulaz {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #srodekFormulaza{
+          text-align: center;
+          margin: 10px;
+          border-radius:20px;
+          padding: 10px;
+          border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="logo.svg" alt="Logo" width="100" height="40" class="d-inline-block align-text-top" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          MENU
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><p class="dropdown-item" href="#"><b>ZAMOW: </b></p></li>
+                          <li><a class="dropdown-item" href="#">Z DOSTAWA</a></li>
+                          <li><a class="dropdown-item" href="#">NA WYNOS</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><p class="dropdown-item" href="#"><b>SPRAWDZ: </b></p></li>
+                          <li><a class="dropdown-item" href="#">MENU W RESTAURACJI</a></li>
+                      </ul>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RESTAURACJE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+      <!-- Karuzela -->
+      <div id="carouselExample" class="carousel slide" >
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="pizz1.jpg" height="260" style="min-height: 40vh; min-width: 90vw; display: flex; justify-content: center; align-items: center;" class="d-block w-100"  alt="reklama1">
+          </div>
+          <div class="carousel-item">
+            <img src="pizz2.jpg" height="260" style="min-height: 40vh; min-width: 90vw; display: flex; justify-content: center; align-items: center;" class="d-block w-100" alt="reklama2">
+          </div>
+          <div class="carousel-item">
+            <img src="pizz3.jpg" height="260" style="min-height: 40vh; min-width: 90vw; display: flex; justify-content: center; align-items: center;" class="d-block w-100" alt="reklama3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Formularz -->
+      <form id="formulaz">
+        <div id="srodekFormulaza" class="col-sm-12 col-md-6 col-xl-3" style="transition: 1s;">
+          <label for="exampleInputEmail1" class="form-label"><b>ZAMÓW PIZZĘ ONLINE</b></label>
+          <div>
+            <input type="text" class="form-control" id="adres" placeholder="Wpisz miasto, ulicę i numer domu...">
+
+              <button type="submit" class="btn btn-outline-success" style="width: 100%;">Rozpocznij zamówienie</button>
+          </div>
+        </div>
+      </form>
+
+    <!-- Galeria -->
+
+    <div style="display: flex; align-items: baseline; justify-content: center;">
+      <img class="col-sm-12 col-md-6 col-xl-3" src="tydzienpepperoni_pizza_pepperonilovers_500x500.jpg" alt="PL">
+      <img class="col-sm-12 col-md-6 col-xl-3" src="BOX_XXL_500x500.jpg" alt="box xxl">
+      <img class="col-sm-12 col-md-6 col-xl-3" src="zapiekaron_relaxdeal_dowolony_classica_pieczywko_500x500.jpg" alt="Relax">
+      <img class="col-sm-12 col-md-6 col-xl-3" src="PH_pizza_szynka_500x500.jpg" alt="Dla dwojga">
+    </div>
+
+    <footer style="background-color: red; color: white; bottom:0; width:100%; height: 40px; display: flex; justify-content: center; align-items: center;">
+      © Pizza Hut 2024
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+    
+
